@@ -1,3 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+
 body{
-  
+  background-color: $bg-color;
+  @extend %font-400;
+  @extend %font-body;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  color: #FFF;
+}
+
+.container{
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.title {
+  @extend %h3;
+  width: 630px;
+  margin: 0 auto 14px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  @extend %font-400;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+  width: 548px;
+  margin: 0 auto 44px;
 }

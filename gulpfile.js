@@ -12,8 +12,7 @@ const imagemin        = require('gulp-imagemin');
 const newer           = require('gulp-newer');
 const fonter          = require('gulp-fonter');
 const ttf2woff2       = require('gulp-ttf2woff2');
-const svgSprite       = require('gulp-svg-sprite');
-const include         = require('gulp-include')
+const include         = require('gulp-include');
 
 
 function pages() {
@@ -66,6 +65,7 @@ function styles() {
 
 function scripts() {
   return src([
+    'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
